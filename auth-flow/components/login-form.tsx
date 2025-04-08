@@ -66,7 +66,7 @@ export function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="space-y-2">
-        <label htmlFor="email" className="block text-sm font-medium text-gray-200">
+        <label htmlFor="email" className="block text-sm font-medium text-white">
           Email address
         </label>
         <Input
@@ -81,7 +81,7 @@ export function LoginForm() {
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="password" className="block text-sm font-medium text-gray-200">
+        <label htmlFor="password" className="block text-sm font-medium text-white">
           Password
         </label>
         <div className="relative">
@@ -106,14 +106,14 @@ export function LoginForm() {
 
       {error && <div className="rounded-md bg-red-500/10 px-3 py-2 text-sm text-red-500">{error}</div>}
 
-      <Button type="submit" className="w-full h-12 bg-indigo-600 hover:bg-indigo-700 text-white" disabled={isLoading}>
+      <Button type="submit" className="w-full h-12 bg-indigo-500 hover:bg-indigo-600 text-white" disabled={isLoading}>
         {isLoading ? "Signing in..." : "Sign in"}
       </Button>
 
       <Button
         type="button"
         variant="outline"
-        className="w-full h-12 border-gray-700 bg-transparent text-white hover:bg-gray-800"
+        className="w-full h-12 border-gray-200 bg-white text-black hover:bg-gray-100 flex items-center justify-center"
       >
         <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24">
           <path
@@ -143,7 +143,7 @@ export function LoginForm() {
             id="remember"
             checked={rememberMe}
             onCheckedChange={(checked) => setRememberMe(checked as boolean)}
-            className="border-gray-600 data-[state=checked]:bg-indigo-600"
+            className="border-gray-600 data-[state=checked]:bg-indigo-500"
           />
           <label htmlFor="remember" className="text-sm text-gray-400">
             Remember for 30 days
@@ -163,4 +163,3 @@ export function LoginForm() {
     </form>
   )
 }
-
