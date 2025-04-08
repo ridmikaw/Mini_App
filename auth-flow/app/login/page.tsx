@@ -19,7 +19,7 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* Right side - Image and testimonial */}
+      {/* Right side*/}
       <div className="hidden relative md:block md:w-1/2">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/30 z-10" />
         <Testimonial />

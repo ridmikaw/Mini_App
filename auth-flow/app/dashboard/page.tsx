@@ -40,7 +40,7 @@ export default function DashboardPage() {
       <main>
         <div className="mx-auto max-w-7xl py-12 sm:px-6 lg:px-8">
           <div className="bg-white shadow rounded-lg p-8">
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">Dashboard</h1>
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">Dashboard </h1>
             <p className="text-gray-600 mb-6">Welcome, you're logged in as {user}.</p>
             <div className="p-4 bg-indigo-50 rounded-lg border border-indigo-100">
               <p className="text-indigo-700">
